@@ -11,6 +11,7 @@ function extractCsrfToken(res) {
   return $("[name=_csrf]").val();
 }
 
+
 describe("Todo test suite ", () => {
   beforeAll(async () => {
     await db.sequelize.sync({ force: true });
